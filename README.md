@@ -6,7 +6,7 @@ Flutter plugin for generating PDF files from HTML
 <!---Html to PDF Flutter--->
 # Screenshots
 <!---Html to PDF Flutter--->
-![](https://raw.githubusercontent.com/khizar1556/html_to_pdf_plus/main/Screenshot_20231227_235800.png)
+<img src="https://raw.githubusercontent.com/khizar1556/html_to_pdf_plus/main/Screenshot_20231227_235800.png" alt="image" width="40%" height="auto">
 
 ### Usage
 <!---Html to PDF Flutter--->
