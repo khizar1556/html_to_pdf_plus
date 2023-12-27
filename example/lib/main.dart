@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String generatedPdfFilePath="";
+  String generatedPdfFilePath = "";
 
   @override
   void initState() {
@@ -70,7 +70,8 @@ class _MyAppState extends State<MyApp> {
     final targetPath = appDocDir.path;
     final targetFileName = "example-pdf";
 
-    final generatedPdfFile = await HtmlToPdf.convertFromHtmlContent(htmlContent, targetPath, targetFileName);
+    final generatedPdfFile = await HtmlToPdf.convertFromHtmlContent(
+        htmlContent, targetPath, targetFileName);
     generatedPdfFilePath = generatedPdfFile.path;
   }
 
@@ -85,7 +86,10 @@ class _MyAppState extends State<MyApp> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => PDFViewer(appBarTitle: "Generated PDF Document", path: generatedPdfFilePath)),
+              MaterialPageRoute(
+                  builder: (context) => PDFViewer(
+                      appBarTitle: "Generated PDF Document",
+                      path: generatedPdfFilePath)),
             );
           },
         ),

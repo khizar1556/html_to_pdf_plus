@@ -7,15 +7,15 @@ class PDFViewer extends StatelessWidget {
   final String path;
   final String appBarTitle;
 
-  PDFViewer({required this.path,required this.appBarTitle});
+  PDFViewer({required this.path, required this.appBarTitle});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
         home: Scaffold(
-          appBar: AppBar(title:Text(appBarTitle),),
-          body: SfPdfViewer.file(
-              File(path))
-        ));
+            appBar: AppBar(
+              title: Text(appBarTitle),
+            ),
+            body: SfPdfViewer.file(File(path))));
   }
 }
