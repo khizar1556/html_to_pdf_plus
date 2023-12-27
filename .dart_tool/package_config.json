@@ -53,10 +53,10 @@
       "name": "html_to_pdf_plus",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.1"
+      "languageVersion": "3.0"
     }
   ],
-  "generated": "2023-12-27T20:00:58.769369Z",
+  "generated": "2023-12-27T20:17:46.748395Z",
   "generator": "pub",
   "generatorVersion": "3.2.3"
 }
