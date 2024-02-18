@@ -1,3 +1,6 @@
+## 1.0.5
+
+* misc fixes
 ## 1.0.4
 
 * Add the landscape and pagesize option

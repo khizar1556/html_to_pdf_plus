@@ -54,12 +54,12 @@ var targetPath = "/your/sample/path";
 var targetFileName = "example_pdf_file";
 
 final generatedPdfFile = await HtmlToPdf.convertFromHtmlContent(
-htmlContent: htmlContent,
-configuration: PdfConfiguration(
-targetDirectory: targetPath,
-targetName: targetFileName,
-printSize: PrintSize.A4,
-printOrientation: PrintOrientation.Landscape,
+  htmlContent: htmlContent,
+  configuration: PdfConfiguration(
+  targetDirectory: targetPath,
+  targetName: targetFileName,
+  printSize: PrintSize.A4,
+  printOrientation: PrintOrientation.Landscape,
 ));
 
 ```
@@ -70,15 +70,27 @@ Code above simply generates **PDF** file from **HTML** content. It should work w
 You can also pass ***File*** object with **HTML** content inside as parameter
 ```dart
 var file = File("/sample_path/example.html");
-var generatedPdfFile = await HtmlToPdf.convertFromHtmlFile(
-    file, targetPath, targetFileName);
+var generatedPdfFilee = await HtmlToPdf.convertFromHtmlFile(
+  htmlFile: file,
+  configuration: PdfConfiguration(
+  targetDirectory: targetPath,
+  targetName: targetFileName,
+  printSize: PrintSize.A4,
+  printOrientation: PrintOrientation.Portrait,
+));
 ```
 
 or even just path to this file
 ```dart
 var filePath = "/sample_path/example.html";
-var generatedPdfFile = await HtmlToPdf.convertFromHtmlFilePath(
-    filePath, targetPath, targetFileName);
+var generatedPdfFilee = await HtmlToPdf.convertFromHtmlFilePath(
+  htmlFilePath: filePath,
+  configuration: PdfConfiguration(
+  targetDirectory: targetPath,
+  targetName: targetFileName,
+  printSize: PrintSize.A4,
+  printOrientation: PrintOrientation.Portrait,
+));
 ```
 
 #### Images

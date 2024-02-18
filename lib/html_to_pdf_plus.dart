@@ -22,7 +22,7 @@ class HtmlToPdf {
     required PdfConfiguration configuration,
   }) async {
     final File temporaryCreatedHtmlFile =
-    await FileUtils.createFileWithStringContent(
+        await FileUtils.createFileWithStringContent(
       htmlContent,
       configuration.htmlFilePath,
     );
@@ -70,16 +70,22 @@ class HtmlToPdf {
     required PdfConfiguration configuration,
   }) async {
     await FileUtils.appendStyleTagToHtmlFile(htmlFilePath);
-    final generatedPdfFilePath = await _convertFromHtmlFilePath(htmlFilePath,configuration.printSize,configuration.printOrientation);
+    final generatedPdfFilePath = await _convertFromHtmlFilePath(
+        htmlFilePath, configuration.printSize, configuration.printOrientation);
     final generatedPdfFile = FileUtils.copyAndDeleteOriginalFile(
-        generatedPdfFilePath, configuration.targetDirectory, configuration.targetName);
+        generatedPdfFilePath,
+        configuration.targetDirectory,
+        configuration.targetName);
 
     return generatedPdfFile;
   }
 
   /// Assumes the invokeMethod call will return successfully
-  static Future<String> _convertFromHtmlFilePath(String htmlFilePath,PrintSize printSize,
-  PrintOrientation printOrientation,) async {
+  static Future<String> _convertFromHtmlFilePath(
+    String htmlFilePath,
+    PrintSize printSize,
+    PrintOrientation printOrientation,
+  ) async {
     int width = printSize
         .getDimensionsInPixels[printOrientation.getWidthDimensionIndex];
     int height = printSize
