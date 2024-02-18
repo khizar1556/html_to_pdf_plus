@@ -9,33 +9,39 @@
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/collection-1.18.0",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/collection-1.17.1",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "flutter",
-      "rootUri": "file:///Users/macbookpro/Desktop/khizarnewdrive/projects/fluttersdk/flutter3_16_4/packages/flutter",
+      "rootUri": "file:///Volumes/khizar/flutter/fluttersdk/flutter3_10_6/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.0"
+    },
+    {
+      "name": "js",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/js-0.6.7",
+      "packageUri": "lib/",
+      "languageVersion": "2.19"
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/material_color_utilities-0.5.0",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/material_color_utilities-0.2.0",
       "packageUri": "lib/",
-      "languageVersion": "2.17"
+      "languageVersion": "2.13"
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/meta-1.10.0",
+      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/meta-1.9.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///Users/macbookpro/Desktop/khizarnewdrive/projects/fluttersdk/flutter3_16_4/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///Volumes/khizar/flutter/fluttersdk/flutter3_10_6/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "3.2"
+      "languageVersion": "3.0"
     },
     {
       "name": "vector_math",
@@ -44,19 +50,13 @@
       "languageVersion": "2.14"
     },
     {
-      "name": "web",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/web-0.3.0",
-      "packageUri": "lib/",
-      "languageVersion": "3.2"
-    },
-    {
       "name": "html_to_pdf_plus",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-01-07T16:05:37.307056Z",
+  "generated": "2024-02-18T09:36:40.850295Z",
   "generator": "pub",
-  "generatorVersion": "3.2.3"
+  "generatorVersion": "3.0.6"
 }

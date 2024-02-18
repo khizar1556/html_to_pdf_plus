@@ -58,7 +58,7 @@ class _MyAppState extends State<MyApp> {
           <tr>
             <td>Fiverr</td>
             <td><a href="https://www.fiverr.com/ranakhizar">https://www.fiverr.com/ranakhizar</a></td>
-         </tr>
+         </tr> 
         </table>
         
         <img src="https://avatars.githubusercontent.com/u/32544554?v=4" alt="web-img">
@@ -71,7 +71,13 @@ class _MyAppState extends State<MyApp> {
     final targetFileName = "example-pdf";
 
     final generatedPdfFile = await HtmlToPdf.convertFromHtmlContent(
-        htmlContent, targetPath, targetFileName);
+        htmlContent: htmlContent,
+        configuration: PdfConfiguration(
+          targetDirectory: targetPath,
+          targetName: targetFileName,
+          printSize: PrintSize.A4,
+          printOrientation: PrintOrientation.Landscape,
+        ));
     generatedPdfFilePath = generatedPdfFile.path;
   }
 

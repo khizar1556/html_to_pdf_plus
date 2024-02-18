@@ -1,4 +1,8 @@
-## 1.0.3
+## 1.0.4
+
+* Add the landscape and pagesize option
+* fix the custom css issue
+* ## 1.0.3
 
 * Add IOS compatibility
 ## 1.0.2

@@ -53,8 +53,15 @@ Flutter plugin for generating PDF files from HTML
 var targetPath = "/your/sample/path";
 var targetFileName = "example_pdf_file";
 
-var generatedPdfFile = await HtmlToPdf.convertFromHtmlContent(
-    htmlContent, targetPath, targetFileName);
+final generatedPdfFile = await HtmlToPdf.convertFromHtmlContent(
+htmlContent: htmlContent,
+configuration: PdfConfiguration(
+targetDirectory: targetPath,
+targetName: targetFileName,
+printSize: PrintSize.A4,
+printOrientation: PrintOrientation.Landscape,
+));
+
 ```
 <!---Html to PDF Flutter--->
 Code above simply generates **PDF** file from **HTML** content. It should work with most of common HTML markers. You don’t need to add *.pdf* extension to ***targetFileName*** because plugin only generates PDF files and extension will be added automatically.
