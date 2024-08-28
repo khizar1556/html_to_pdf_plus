@@ -32,6 +32,7 @@ class HtmlToPdf {
       temporaryCreatedHtmlFile.path,
       configuration.printSize,
       configuration.printOrientation,
+      configuration.linksClickable,
     );
 
     temporaryCreatedHtmlFile.delete();
@@ -54,6 +55,7 @@ class HtmlToPdf {
       htmlFile.path,
       configuration.printSize,
       configuration.printOrientation,
+      configuration.linksClickable,
     );
 
     return FileUtils.copyAndDeleteOriginalFile(
@@ -71,7 +73,11 @@ class HtmlToPdf {
   }) async {
     await FileUtils.appendStyleTagToHtmlFile(htmlFilePath);
     final generatedPdfFilePath = await _convertFromHtmlFilePath(
-        htmlFilePath, configuration.printSize, configuration.printOrientation);
+      htmlFilePath,
+      configuration.printSize,
+      configuration.printOrientation,
+      configuration.linksClickable,
+    );
     final generatedPdfFile = FileUtils.copyAndDeleteOriginalFile(
         generatedPdfFilePath,
         configuration.targetDirectory,
@@ -85,6 +91,7 @@ class HtmlToPdf {
     String htmlFilePath,
     PrintSize printSize,
     PrintOrientation printOrientation,
+    bool linksClickable,
   ) async {
     int width = printSize
         .getDimensionsInPixels[printOrientation.getWidthDimensionIndex];
@@ -99,6 +106,7 @@ class HtmlToPdf {
         'height': height,
         'printSize': printSize.printSizeKey,
         'orientation': printOrientation.orientationKey,
+        'linksClickable': linksClickable,
       },
     ) as String;
   }

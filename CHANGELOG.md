@@ -1,3 +1,6 @@
+## 1.0.6
+
+* enable links clickable on iOS.
 ## 1.0.5
 
 * misc fixes

@@ -3,49 +3,43 @@
   "packages": [
     {
       "name": "characters",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/characters-1.3.0",
+      "rootUri": "file:///Users/khizarrehman/.pub-cache/hosted/pub.dev/characters-1.3.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "collection",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/collection-1.17.1",
+      "rootUri": "file:///Users/khizarrehman/.pub-cache/hosted/pub.dev/collection-1.18.0",
       "packageUri": "lib/",
       "languageVersion": "2.18"
     },
     {
       "name": "flutter",
-      "rootUri": "file:///Volumes/khizar/flutter/fluttersdk/flutter3_10_6/packages/flutter",
+      "rootUri": "file:///Users/khizarrehman/Desktop/flutterSdk/flutter/packages/flutter",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
-    },
-    {
-      "name": "js",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/js-0.6.7",
-      "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.2"
     },
     {
       "name": "material_color_utilities",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/material_color_utilities-0.2.0",
+      "rootUri": "file:///Users/khizarrehman/.pub-cache/hosted/pub.dev/material_color_utilities-0.8.0",
       "packageUri": "lib/",
-      "languageVersion": "2.13"
+      "languageVersion": "2.17"
     },
     {
       "name": "meta",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/meta-1.9.1",
+      "rootUri": "file:///Users/khizarrehman/.pub-cache/hosted/pub.dev/meta-1.11.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///Volumes/khizar/flutter/fluttersdk/flutter3_10_6/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///Users/khizarrehman/Desktop/flutterSdk/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
-      "languageVersion": "3.0"
+      "languageVersion": "3.2"
     },
     {
       "name": "vector_math",
-      "rootUri": "file:///Users/macbookpro/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
+      "rootUri": "file:///Users/khizarrehman/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
       "languageVersion": "2.14"
     },
@@ -56,7 +50,7 @@
       "languageVersion": "3.0"
     }
   ],
-  "generated": "2024-02-18T09:51:41.192482Z",
+  "generated": "2024-08-28T19:09:54.997874Z",
   "generator": "pub",
-  "generatorVersion": "3.0.6"
+  "generatorVersion": "3.3.1"
 }

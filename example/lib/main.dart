@@ -76,7 +76,8 @@ class _MyAppState extends State<MyApp> {
           targetDirectory: targetPath,
           targetName: targetFileName,
           printSize: PrintSize.A4,
-          printOrientation: PrintOrientation.Landscape,
+          printOrientation: PrintOrientation.Portrait,
+          linksClickable: true
         ));
     generatedPdfFilePath = generatedPdfFile.path;
   }

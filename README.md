@@ -60,6 +60,7 @@ final generatedPdfFile = await HtmlToPdf.convertFromHtmlContent(
   targetName: targetFileName,
   printSize: PrintSize.A4,
   printOrientation: PrintOrientation.Landscape,
+  linksClickable: true
 ));
 
 ```
@@ -77,6 +78,7 @@ var generatedPdfFilee = await HtmlToPdf.convertFromHtmlFile(
   targetName: targetFileName,
   printSize: PrintSize.A4,
   printOrientation: PrintOrientation.Portrait,
+  linksClickable: true
 ));
 ```
 
@@ -90,6 +92,7 @@ var generatedPdfFilee = await HtmlToPdf.convertFromHtmlFilePath(
   targetName: targetFileName,
   printSize: PrintSize.A4,
   printOrientation: PrintOrientation.Portrait,
+  linksClickable: true
 ));
 ```
 
