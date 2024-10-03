@@ -25,6 +25,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 
 android {
+    namespace 'com.khizar1556.html_to_pdf_plus'
     compileSdkVersion 34
 
     compileOptions {
